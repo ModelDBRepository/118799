@@ -1,0 +1,120 @@
+<html><head>
+  <script language="JavaScript" type="text/javascript" src="index_files/victor"></script>
+ 
+  <meta name="Author" content="Victor Matveev">
+  <meta name="description" content="Victor Matveev publication simulation files">
+  <meta name="Keywords" content="MATLAB simulation files for an article by Oh and Matveev on leap-frog spiking">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>MATLAB code for manuscript "Capturing the bursting dynamics..." (2007) Matveev, Bose, Nadim</title> 
+
+
+
+<link rel="STYLESHEET" type="text/css" href="index_files/victor.css">
+
+<style type="text/css">
+
+/*       BODY {font-size:small; font-family:sans-serif;  } */
+   H4 {color: darkred; }
+   HR  {width:650px; text-align:left; margin: 0 auto 0 0;}
+/*       UL {font-size:small;} */
+/*       LI {font-size:small;} */
+
+</style>
+
+<!-- base href="http://web.njit.edu/~matveev/Scripts/LeapFrog/" --><!-- ===============================================================================
+                               B  O  D  Y
+=============================================================================== --></head>
+
+
+<body bgcolor="#ffffff">
+<h3>Note from the ModelDB Administrator: the below is a snapshot of the
+<a href="http://web.njit.edu/~matveev/Scripts/LeapFrog/">authors web site</a>
+taken on April 13th, 2009.</h3><hr/>
+
+<script language="JavaScript" type="text/javascript">
+makeTitle("MATLAB code: leap-frog spiking due to non-weak inhibition");
+</script><table width="600"><tbody><tr><td class="title" colspan="5" align="center" height="31" width="100%">MATLAB code: leap-frog spiking due to non-weak inhibition</td></tr><tr><td class="TCALC" width="24%"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/calc.html" target="_self">Calcium Calculator</a></td> <td class="TMENU" width="19%"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/Courses/courses.html" target="_self">&nbsp;&nbsp;Teaching&nbsp;&nbsp;</a></td> <td class="TMENU" width="19%"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/publications.html" target="_top">Publications</a></td> <td class="TMENU" width="19%"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/index.html" target="_top">Homepage</a></td> <td class="TMENU" width="19%"><a class="TMENU" href="http://m.njit.edu/" target="_top">NJIT Math Dept</a></td> </tr></tbody></table><br>
+<br>
+
+
+<!-- b><font color=maroon>[[ Under Construction ]]</font></b><br><br -->
+
+<!--font color=maroon>Under construction</font><br><br><br-->
+
+The MATLAB scripts posted below reproduce any of the activity states shown in Fig. 1 of the
+manuscript:<br><br>
+
+<table border="1" cellpadding="3"><tbody><tr><td class="COLOR" align="center">
+Myongkeun Oh and Victor Matveev (2009)<br>
+<b>Loss of phase-locking in non-weakly coupled inhibitory networks of type-I model neurons</b><br>
+Journal of Computational Neuroscince, <b>26</b>(2): 303-320. 
+<a href="http://dx.doi.org/10.1007/s10827-008-0112-8" target="_top">[ DOI ]</a>
+</td></tr></tbody></table>
+<br>
+
+Please place all files in the same directory before running the main simulation script <b>LeapFrogMovie.m</b>
+
+<br><br>
+<hr>
+<br>
+
+<!-- ===============================================================================
+                          MAIN  TABLE
+=============================================================================== -->
+
+<table cellpadding="2" width="600">
+
+<tbody><tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/Scripts/LeapFrog/LeapFrogMovie.m" class="SCRIPT">LeapFrogMovie.m</a>
+</td><td>
+This m-script illustrates the geometry of the alternating-order (leap-frog / leader switching) spiking
+shown in Figure 1. By changing the parameter variable <code>Params</code>, any of the activity
+states in Figure 1 can be reproduced
+<br><br>
+</td></tr>
+
+<tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/Scripts/LeapFrog/MLode.m" class="SCRIPT">MLode.m</a>
+</td><td>
+This ODE m-file implements the model equations (Eqs. 1-3).
+<br><br>
+</td></tr>
+
+<tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/Scripts/LeapFrog/Vnullcline.m" class="SCRIPT">Vnullcline.m</a>
+</td><td> Calculates the V-nullcline; used by the main LeapFrogMovie script above.
+<br><br>
+</td></tr>
+
+</tbody></table>
+
+<hr>
+<br>
+Supported in part by the <b>National Science Foundation</b> grants 
+<b>DMS 0417416</b> and <b>DMS 0817703</b> to Victor Matveev
+<br><br>
+
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- table cellpadding=3><tr><td bgcolor="#E0FFEA">
+<a href="../scripts.html">[ Back to Scripts ]</a>
+</td></tr></table -->
+<hr>
+<address>
+<small>
+<a href="http://web.njit.edu/%7Ematveev" target="_top">Victor Matveev</a>
+</small>
+</address>
+<small>
+This server is running a 
+<a href="http://www.redhat.com/" target="_top">Redhat</a> distribution of 
+<a href="http://www.linux.org/" target="_top">Linux</a>.
+<br>
+<!-- Created: Sun Apr 12 18:25:17 EDT 1998 -->
+<!-- hhmts start -->
+Last modified: April 12, 2009
+<!-- hhmts end -->
+</small>
+
+</body></html>
